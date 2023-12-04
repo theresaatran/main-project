@@ -1,0 +1,22 @@
+:root {
+	--blue: #5ecdf2;
+	--navbar-text-color: #ffffff;
+	
+	--font-size-base: 40px;
+	--font-size-small: 1rem;
+	--font-size-sm: 1.5rem;
+	--font-size-medium: 2rem;
+	--font-size-ml: 2.5rem;
+	--font-size-large: 3.5rem;
+	--font-size-xl: 4rem;
+	--font-size-xxl: 6rem;
+	
+	--font-leading-base: 1rem;
+	--font-leading-small: 1rem;
+	--font-leading-medium: 1rem;
+	
+	--font-leading-large: 1rem;
+	--spacing-small: var(--font-leading-base);
+	--spacing-medium: 2rem;
+	--spacing-large: 4rem;
+	}

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main project</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font.css">
+
+
+</head>
+
+<body>
+
+<!-- -------------------------- HEADER -------------------------- -->
+<header>
+	<input type="checkbox" name="" id="toggler">
+	<label for="toggler" class="fas fa-bars"></label>
+
+	<a href="#" class="logo">Travel<span>.</span> </a>
+
+	<nav id="navbar" class="navbar">
+		<a href="#home">home</a>
+		<a href="#about">about</a>
+		<a href="#products">products</a>
+		<a href="#review">review</a>
+		<a href="#contact">contact</a>
+	</nav>
+
+	<div class="icons">
+		<a href="#" class="fas fa-heart"></a>
+		<a href="#" class="fas fa-shopping-cart"><span>4</span></a>
+		<a href="#" class="fas fa-user"></a>
+	</div>
+</header>
+
+<!-- -------------------------- HOME -------------------------- -->
+
+<section class="home" id="home">
+	<div class="content">
+		<h3>Welcome To Travel <span>.</span></h3>
+		<span>Explore the world</span>
+		<p>Live the trips, explore the world, discover paradises,
+			islands, mountains and much more, get your trip now!</p>
+		<a href="#" class="button">look now</a> 
+	</div>
+</section>
+
+<!-- -------------------------- ABOUT US -------------------------- -->
+
+<section class="about" id="about">
+	<h1 class="heading"><span> about</span> us</h1>
+	<div class="row">
+		<div class="video-container">
+			<div class="slideshow">
+				<video src="assets/video/travel.mp4" loop autoplay muted></video>
+                <video src="assets/video/travel-2.mp4" loop autoplay muted></video>
+                <video src="assets/video/travel-3.mp4" loop autoplay muted></video>
+			</div>
+			<h3>best places to travel</h3>
+			
+			<a class="prev" onclick="prevSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+		<div class="content">
+			<h3>why choose us?</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Officiis expedita, consequuntur earum qui deleniti perspiciatis ratione
+				nesciunt veritatis explicabo ad temporibus aliquam ea culpa maxime pariatur!
+				Perferendis delectus placeat suscipit?</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+				 Dolore assumenda explicabo quae vel, sunt autem error ab
+				 obcaecati doloribus sint, vitae iste, fugiat expedita?
+				 Est assumenda ut voluptatum corporis sint.</p>
+			<a href="#" class="button">learn more</a>
+		</div>
+	</div>
+</section>
+
+<!-- -------------------------- REGISTRATION -------------------------- -->
+
+<section class="register" id="register">
+    <div class="row">
+        <div class="text">
+            <h4>JOIN FOR FREE</h4>
+            <h3>Unleash the traveler <span>inside YOU</span>, Enjoy your Dream Vacation</h3>
+            <p>Get started with the easiest and secure website to buy travel tickets</p>
+        </div>
+
+        <div class="register-form">
+            <h3>Create new account</h3>
+            <form id="registrationForm" action="#" class="form">
+                <div class="input-box">
+                    <input id="fullname" type="text" placeholder="full name" required>
+                </div>
+                <div class="input-box">
+                    <input id="email" type="text" placeholder="email address" required>
+                </div>
+                <div class="input-box">
+                    <input id="password" type="password" placeholder="password" required>
+                </div>
+            </form>
+
+            <div class="login-links">
+                <p>Already a member? <a href="#">Log in</a></p>
+            </div>
+
+            <a href="#" id="submitButton" class="button">Create account</a>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------- ICONS SECTION -------------------------- -->
+<section class="icons-container">
+	<div class="icons">
+		<img src="assets/img/icon-1.png" alt="">
+		<div class="info">
+			<h3>free delivery</h3>
+			<span>on all orders</span>
+		</div>
+	</div>
+
+	<div class="icons">
+		<img src="assets/img/icon-2.png" alt="">
+		<div class="info">
+			<h3>10 days return</h3>
+			<span>moneyback guarantee</span>
+		</div>
+	</div>
+
+	<div class="icons">
+		<img src="assets/img/icon-3.png" alt="">
+		<div class="info">
+			<h3>offer & gifts</h3>
+			<span>on all orders</span>
+		</div>
+	</div>
+
+	<div class="icons">
+		<img src="assets/img/icon-4.png" alt="">
+		<div class="info">
+			<h3>secure payments</h3>
+			<span>protected by paypal</span>
+		</div>
+	</div>
+</section>
+
+
+<!-- -------------------------- PRODUCTS SECTION -------------------------- -->
+<section class="products" id="products">
+	<h1 class="heading">latest <span>products</span></h1>
+
+	<div class="wrapper">
+		<div id="search-container">
+			<input type="search" id="search-input" placeholder="Search product name here..">
+			<button id="search">Search</button>
+		</div>
+
+		<div id="buttons">
+			<button class="button-value">All</button>
+			<button class="button-value">-5%</button>
+			<button class="button-value">-10%</button>
+			<button class="button-value">-15%</button>
+			<button class="button-value">-20%</button>
+		</div>
+	</div>
+
+	<div class="box-container">
+		<div class="box" data-type="-10%">
+			<span class="discount">-10%</span>
+			<div class="image">
+				<img src="assets/img/croatia.jpg" alt="croatia">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn">add to cart</a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Trip to Croatia</h3>
+				<div class="price">$117.99 <span>$130.99</span></div>
+			</div>
+		</div>
+
+		<div class="box" data-type="-15%">
+			<span class="discount">-15%</span>
+			<div class="image">
+				<img src="assets/img/iceland.jpg" alt="iceland">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn">add to cart</a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Trip to Iceland</h3>
+				<div class="price">$116.25 <span>$155.99</span></div>
+			</div>
+		</div>
+
+		<div class="box" data-type="-5%">
+			<span class="discount">-5%</span>
+			<div class="image">
+				<img src="assets/img/italy.jpg" alt="italy">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn">add to cart</a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Trip to Italy</h3>
+				<div class="price">$213.75 <span>$225.99</span></div>
+			</div>
+		</div>
+
+		<div class="box" data-type="-20%">
+			<span class="discount">-20%</span>
+			<div class="image">
+				<img src="assets/img/thailand.jpg" alt="thailand">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn">add to cart</a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Trip to Thailand</h3>
+				<div class="price">$345.99 <span>$432.99</span></div>
+			</div>
+		</div>
+
+		<div class="box" data-type="-10%">
+			<span class="discount">-10%</span>
+			<div class="image">
+				<img src="assets/img/spain.jpg" alt="spain">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn">add to cart</a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Trip to Spain</h3>
+				<div class="price">$135.99 <span>$150.99</span></div>
+			</div>
+		</div>
+
+		<div class="box" data-type="-10%">
+			<span class="discount">-10%</span>
+			<div class="image">
+				<img src="assets/img/france.jpg" alt="france">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn">add to cart</a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Trip to France</h3>
+				<div class="price">$199.99 <span>$222.99</span></div>
+			</div>
+		</div>
+
+		<div class="box" data-type="-20%">
+			<span class="discount">-20%</span>
+			<div class="image">
+				<img src="assets/img/bali.jpg" alt="bali">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn">add to cart</a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Trip to Bali</h3>
+				<div class="price">$448.80 <span>$561</span></div>
+			</div>
+		</div>
+
+		<div class="box" data-type="-20%">
+			<span class="discount">-20%</span>
+			<div class="image">
+				<img src="assets/img/los-angeles.jpg" alt="los angeles">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn">add to cart</a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Trip to Los Angeles</h3>
+				<div class="price">$317.60 <span>$397.99</span></div>
+			</div>
+		</div>
+
+		<div class="box" data-type="-5%">
+			<span class="discount">-5%</span>
+			<div class="image">
+				<img src="assets/img/cape-town.jpg" alt="cape town">
+				<div class="icons">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="cart-btn">add to cart</a>
+					<a href="#" class="fas fa-share"></a>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Trip to Cape Town</h3>
+				<div class="price">$447.45 <span>$471.99</span></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- -------------------------- REVIEW SECTION -------------------------- -->
+<section class="review" id="review">
+	<h1 class="heading"> customer's <span>review</span></h1>
+	<div class="box-container">
+
+		<div class="box">
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit
+				voluptate dolor itaque labore ut culpa doloribus nostrum aperiam vero.
+				 Explicabo ipsam quo ab aperiam dolor eius ad iste labore.</p>
+			<div class="user">
+				<img src="assets/img/businessman.png" alt="">
+				<div class="user-info">
+					<h3>Maria Fløtre</h3>
+					<span>excellent</span>
+				</div>
+			</div>
+			<span class="fas fa-quote-right"></span>
+		</div>
+
+		<div class="box">
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit
+				 voluptate dolor itaque labore ut culpa doloribus nostrum aperiam vero.
+				  Explicabo ipsam quo ab aperiam dolor eius ad iste labore.</p>
+			<div class="user">
+				<img src="assets/img/businessman.png" alt="">
+				<div class="user-info">
+					<h3>Catherine Dao</h3>
+					<span>average</span>
+				</div>
+			</div>
+			<span class="fas fa-quote-right"></span>
+		</div>
+
+		<div class="box">
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit
+				 voluptate dolor itaque labore ut culpa doloribus nostrum aperiam vero.
+				  Explicabo ipsam quo ab aperiam dolor eius ad iste labore.</p>
+			<div class="user">
+				<img src="assets/img/businessman.png" alt="">
+				<div class="user-info">
+					<h3>Ola Nordmann</h3>
+					<span>very good</span>
+				</div>
+			</div>
+			<span class="fas fa-quote-right"></span>
+		</div>
+
+		<div class="box">
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit
+				 voluptate dolor itaque labore ut culpa doloribus nostrum aperiam vero.
+				  Explicabo ipsam quo ab aperiam dolor eius ad iste labore.</p>
+			<div class="user">
+				<img src="assets/img/businessman.png" alt="">
+				<div class="user-info">
+					<h3>john doe</h3>
+					<span>excellent</span>
+				</div>
+			</div>
+			<span class="fas fa-quote-right"></span>
+		</div> 
+	</div>
+</section>
+
+<!-- -------------------------- CONTACT SECTION -------------------------- -->
+<section class="contact" id="contact">
+	<h1 class="heading"> <span>contact</span> us</h1>
+	<div class="row">
+		<form action="">
+			<input type="text" placeholder="Full name" class="box">
+			<input type="email" placeholder="Email address" class="box">
+			<input type="number" placeholder="Phone number" class="box">
+			<textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
+			<input type="submit" value="send message" class="button">
+ 		</form>
+
+		<div class="image">
+			<img src="assets/img/contact-img.png" alt="">
+		</div>
+	</div>
+</section>
+
+<!-- -------------------------- FOOTER SECTION -------------------------- -->
+
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3>quick links</h3>
+			<a href="#">home</a>
+			<a href="#">about</a>
+			<a href="#">products</a>
+			<a href="#">review</a>
+			<a href="#">contact</a>
+		</div>
+
+		<div class="box">
+			<h3>extra links</h3>
+			<a href="#">my account</a>
+			<a href="#">my order</a>
+			<a href="#">my favorite</a>
+		</div>
+
+		<div class="box">
+			<h3>locations</h3>
+			<a href="#">Norway</a>
+			<a href="#">USA</a>
+			<a href="#">japan</a>
+			<a href="#">france</a>
+		</div>
+
+		<div class="box">
+			<h3>contact info</h3>
+			<a href="#">+123-456-789</a>
+			<a href="#">example@gmail.com</a>
+			<a href="#">oslo, Norway</a>
+			<a href="#">review</a>
+			<img src="assets/img/payment.webp" alt="">
+		</div>
+	</div>
+	<div class="credit"> created by <span> Theresa Tran</span></div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
